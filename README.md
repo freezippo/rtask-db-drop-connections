@@ -75,7 +75,7 @@ PostgresConnectionHelper::drop_all_connections 'database', 'username', 'password
 include this line in your rails `Gemfile`:
 
 ```ruby
-gem 'rtask-db-drop-connections', '~> 1.0', git: 'https://github.com/zencodepro/rtask-db-drop-connections.git'
+gem 'rtask-db-drop-connections', '~> 1.0', git: 'https://github.com/freezippo/rtask-db-drop-connections.git'
 ```
 
 and execute
@@ -89,7 +89,7 @@ bundle install
 Clone git repository to `#{Rails.root}/vendor/gems`
 
 ```
-git clone https://github.com/zencodepro/rtask-db-drop-connections.git vendor/gems/rtask-db-drop-connections
+git clone https://github.com/freezippo/rtask-db-drop-connections.git vendor/gems/rtask-db-drop-connections
 ```
 
 then include this line in your rails `Gemfile`:
@@ -109,7 +109,7 @@ gem cleanup rtask-db-drop-connections
 
 Clone from github
 ```
-git clone https://github.com/zencodepro/rtask-db-drop-connections.git /tmp/my_rtask
+git clone https://github.com/freezippo/rtask-db-drop-connections.git /tmp/my_rtask
 cd /tmp/my_rtask
 ```
 
