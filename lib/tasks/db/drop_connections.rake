@@ -9,7 +9,7 @@ namespace :db do
       next
     end
 
-    PostgresConnectionHelper::drop_all_connections cnf['database'], cnf['username'], cnf['password']
+    PostgresConnectionHelper::drop_all_connections cnf['host'], cnf['database'], cnf['username'], cnf['password']
 
   end
 
