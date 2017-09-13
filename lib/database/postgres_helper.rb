@@ -1,6 +1,6 @@
 class PostgresConnectionHelper
-  def self.drop_all_connections(dbname, user, password)
-    conn = PG.connect(:dbname => 'postgres', user: user, password: password)
+  def self.drop_all_connections(host, dbname, user, password)
+    conn = PG.connect(:host => host, :dbname => 'postgres', user: user, password: password)
 
     q = 'SELECT pg_terminate_backend(pg_stat_activity.pid) ' +
       'FROM pg_stat_activity ' +
